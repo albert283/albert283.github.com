@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://albert283.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: shell | My Octopress Blog]]></title>
+  <link href="http://albert283.github.com/blog/categories/shell/atom.xml" rel="self"/>
   <link href="http://albert283.github.com/"/>
   <updated>2011-10-22T19:22:36+08:00</updated>
   <id>http://albert283.github.com/</id>
@@ -18,10 +18,9 @@
     <link href="http://albert283.github.com/blog/2011/10/22/script-to-get-ip-address/"/>
     <updated>2011-10-22T19:10:00+08:00</updated>
     <id>http://albert283.github.com/blog/2011/10/22/script-to-get-ip-address</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span>Bash</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ifconfig | grep <span class="s1">&#39;inet addr:&#39;</span> | grep -v <span class="s1">&#39;127.0.0.1&#39;</span> | cut -d: -f2 | awk <span class="s1">&#39;{print $1}&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+    <content type="html"><![CDATA[<p><code>bash Bash
+ifconfig | grep 'inet addr:' | grep -v '127.0.0.1' | cut -d: -f2 | awk '{print $1}'
+</code></p>
 ]]></content>
   </entry>
   
