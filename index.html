@@ -9,8 +9,10 @@
   <meta name="author" content="Albert">
 
   
-  <meta name="description" content="Bash1
-ifconfig | grep &#39;inet addr:&#39; | grep -v &#39;127.0.0.1&#39; | cut -d: -f2 | awk &#39;{print $1}&#39; ">
+  <meta name="description" content="Enable wake_lock by manual to avoid android entering suspend mode Bash1
+2
+adb shell
+echo mylock &gt; sys/power/wake_lock ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +71,44 @@ ifconfig | grep &#39;inet addr:&#39; | grep -v &#39;127.0.0.1&#39; | cut -d: -f2
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/04/15/android-enable-wake-lock-by-manual/">Enable Wake_lock by Manual</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2013-04-15T12:04:00+08:00" pubdate>Apr 15<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Enable wake_lock by manual to avoid android entering suspend mode</p>
+
+<figure class='code'><figcaption><span>Bash</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>adb shell
+</span><span class='line'><span class="nb">echo </span>mylock &gt; sys/power/wake_lock
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2011/10/22/script-to-get-ip-address/">Script to Get Ip Address</a></h1>
     
     
@@ -111,6 +151,10 @@ ifconfig | grep &#39;inet addr:&#39; | grep -v &#39;127.0.0.1&#39; | cut -d: -f2
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/15/android-enable-wake-lock-by-manual/">Enable wake_lock by manual</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2011/10/22/script-to-get-ip-address/">Script to get ip address</a>
       </li>
     
@@ -128,7 +172,7 @@ ifconfig | grep &#39;inet addr:&#39; | grep -v &#39;127.0.0.1&#39; | cut -d: -f2
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2011 - Albert -
+  Copyright &copy; 2013 - Albert -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

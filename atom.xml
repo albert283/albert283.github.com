@@ -4,7 +4,7 @@
   <title><![CDATA[albert { Blog }]]></title>
   <link href="http://albert283.github.com/atom.xml" rel="self"/>
   <link href="http://albert283.github.com/"/>
-  <updated>2011-10-22T20:14:34+08:00</updated>
+  <updated>2013-04-15T14:14:07+08:00</updated>
   <id>http://albert283.github.com/</id>
   <author>
     <name><![CDATA[Albert]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Enable wake_lock by manual]]></title>
+    <link href="http://albert283.github.com/blog/2013/04/15/android-enable-wake-lock-by-manual/"/>
+    <updated>2013-04-15T12:04:00+08:00</updated>
+    <id>http://albert283.github.com/blog/2013/04/15/android-enable-wake-lock-by-manual</id>
+    <content type="html"><![CDATA[<p>Enable wake_lock by manual to avoid android entering suspend mode</p>
+
+<figure class='code'><figcaption><span>Bash</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>adb shell
+</span><span class='line'><span class="nb">echo </span>mylock &gt; sys/power/wake_lock
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Script to get ip address]]></title>

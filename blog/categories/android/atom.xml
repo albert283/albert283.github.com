@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | albert { Blog }]]></title>
+  <link href="http://albert283.github.com/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://albert283.github.com/"/>
+  <updated>2013-04-15T14:14:07+08:00</updated>
+  <id>http://albert283.github.com/</id>
+  <author>
+    <name><![CDATA[Albert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Enable wake_lock by manual]]></title>
+    <link href="http://albert283.github.com/blog/2013/04/15/android-enable-wake-lock-by-manual/"/>
+    <updated>2013-04-15T12:04:00+08:00</updated>
+    <id>http://albert283.github.com/blog/2013/04/15/android-enable-wake-lock-by-manual</id>
+    <content type="html"><![CDATA[<p>Enable wake_lock by manual to avoid android entering suspend mode</p>
+
+<p><code>bash Bash
+adb shell
+echo mylock &gt; sys/power/wake_lock
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
