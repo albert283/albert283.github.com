@@ -5,14 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>albert { Blog }</title>
+  <title>283{Blog}</title>
   <meta name="author" content="Albert">
 
   
-  <meta name="description" content="Enable wake_lock by manual to avoid android entering suspend mode Bash1
+  <meta name="description" content="Clone Repository 1
 2
-adb shell
-echo mylock &gt; sys/power/wake_lock ">
+3
+4
+git clone https://github.com/username/username.github.com.git -b source
+cd username.github.com
+git clone https://github.com/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -27,7 +30,7 @@ echo mylock &gt; sys/power/wake_lock ">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="albert { Blog }" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="283{Blog}" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -38,7 +41,7 @@ echo mylock &gt; sys/power/wake_lock ">
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">albert { Blog }</a></h1>
+  <h1><a href="/">283{Blog}</a></h1>
   
     <h2>Software Learning</h2>
   
@@ -65,6 +68,79 @@ echo mylock &gt; sys/power/wake_lock ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/15/blog-update-process/">Blog Update Process</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2013-04-15T14:21:00+08:00" pubdate>Apr 15<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Clone Repository</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone https://github.com/username/username.github.com.git -b <span class="nb">source</span>
+</span><span class='line'><span class="nb">cd </span>username.github.com
+</span><span class='line'>git clone https://github.com/username/username.github.com.git -b master _deploy
+</span><span class='line'><span class="nb">cd</span> ..
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Blog Posts</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake new_post<span class="o">[</span><span class="s2">&quot;title&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="c"># creates /source/super-awesone/index.markdown</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Generate/Preview/Deploy</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake generate <span class="c"># Generates posts and pages</span>
+</span><span class='line'>rake preview  <span class="c"># Watches, and mounts a webserver at http://localhost:4000</span>
+</span><span class='line'>rake deploy   <span class="c"># Deploy blog to github</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Commit source</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git add .
+</span><span class='line'>git commit -m <span class="s1">&#39;your message&#39;</span>
+</span><span class='line'>git push
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -149,6 +225,10 @@ echo mylock &gt; sys/power/wake_lock ">
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/15/blog-update-process/">Blog update process</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/04/15/android-enable-wake-lock-by-manual/">Enable wake_lock by manual</a>

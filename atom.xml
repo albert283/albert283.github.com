@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[albert { Blog }]]></title>
+  <title><![CDATA[283{Blog}]]></title>
   <link href="http://albert283.github.com/atom.xml" rel="self"/>
   <link href="http://albert283.github.com/"/>
-  <updated>2013-04-15T14:14:07+08:00</updated>
+  <updated>2013-04-15T14:41:13+08:00</updated>
   <id>http://albert283.github.com/</id>
   <author>
     <name><![CDATA[Albert]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Blog update process]]></title>
+    <link href="http://albert283.github.com/blog/2013/04/15/blog-update-process/"/>
+    <updated>2013-04-15T14:21:00+08:00</updated>
+    <id>http://albert283.github.com/blog/2013/04/15/blog-update-process</id>
+    <content type="html"><![CDATA[<p>Clone Repository</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone https://github.com/username/username.github.com.git -b <span class="nb">source</span>
+</span><span class='line'><span class="nb">cd </span>username.github.com
+</span><span class='line'>git clone https://github.com/username/username.github.com.git -b master _deploy
+</span><span class='line'><span class="nb">cd</span> ..
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Blog Posts</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake new_post<span class="o">[</span><span class="s2">&quot;title&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="c"># creates /source/super-awesone/index.markdown</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Generate/Preview/Deploy</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake generate <span class="c"># Generates posts and pages</span>
+</span><span class='line'>rake preview  <span class="c"># Watches, and mounts a webserver at http://localhost:4000</span>
+</span><span class='line'>rake deploy   <span class="c"># Deploy blog to github</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Commit source</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git add .
+</span><span class='line'>git commit -m <span class="s1">&#39;your message&#39;</span>
+</span><span class='line'>git push
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Enable wake_lock by manual]]></title>
