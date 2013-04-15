@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://albert283.github.com
-title: albert { Blog }
+title: 283{Blog}
 subtitle: Software Learning
-author: Albert 
+author: Albert
 simple_search: http://google.com/search
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -92,6 +92,6 @@ disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id:
-   
+
 # Facebook Like
-facebook_like: true   
+facebook_like: true
